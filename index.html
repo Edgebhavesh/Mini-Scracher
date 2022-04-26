@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Scracher</title>
+    <style>
+        #evaluatedText{
+    padding: 10px;
+    margin: auto;
+    box-shadow: rgba(0,0 0, 0.19) 0px 10px 20px rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 1em; 
+    }
+    div{
+        margin-top: 200px;
+        margin-left: 500px;
+        margin-right: 550px;
+        box-sizing:content-box;
+        border: 3px solid palevioletred;
+        padding: 10px;
+        background-color: bisque;
+        border-radius: 1em;
+    }
+    h1{
+        color: palevioletred;
+    }
+    h3{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- HTML here -->
+    <div>
+    <h1>Mini Scraper</h1>
+    <input id="evaluatedText" value="">
+    <h3 id="letterCount">0</h3>
+    </div>
+</body>
+<script>
+    // JS code here
+    var x=document.getElementById("evaluatedText");
+    x.addEventListener("keyup",function(){
+        document.getElementById("letterCount").innerHTML=x.value.length;
+    })
+</script>
+</html>
